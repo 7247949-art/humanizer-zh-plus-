@@ -1,6 +1,6 @@
 # 自我进化工作区
 
-这里记录 `humanizer-zh-plus` 在真实改写中发现的新 AI 写作痕迹。
+这里记录 `humanizer-zh-pro` 在真实改写中发现的新 AI 写作痕迹。
 
 正式 Pattern 仍以 `SKILL.md` 为准。这里的内容只用于观察、积累证据和等待人工审核。
 

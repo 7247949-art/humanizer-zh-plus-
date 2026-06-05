@@ -1,6 +1,6 @@
 ---
-name: humanizer-zh-plus
-description: "中文文本去 AI 味增强工具。基于 blader/humanizer 2.5.1 + op7418/humanizer-zh + 5 种中文特有 Pattern。通用版，适用于所有中文写作场景。"
+name: humanizer-zh-pro
+description: "中文文本去 AI 味增强 Skill。基于 RobinZorro86/humanizer-zh-plus 更新，包含 34 种 Pattern 与半自动自我进化工作区。适用于中文文章、文案、报告和长文本改写。"
 version: 1.1.0
 author: Brook (writing agent)
 license: MIT
@@ -9,7 +9,7 @@ metadata:
   hermes:
     tags: [writing, editing, humanize, de-ai, chinese, voice, prose]
     category: creative
-    homepage: https://github.com/blader/humanizer
+    homepage: https://github.com/7247949-art/humanizer-zh-pro
     based_on:
       - name: blader/humanizer
         version: "2.5.1"
@@ -17,12 +17,14 @@ metadata:
       - name: op7418/humanizer-zh
         url: https://github.com/op7418/humanizer-zh
       - name: humanizer-zh-plus
-        description: "增强版，+5种中文特有Pattern（Pattern 30-34）"
+        url: https://github.com/RobinZorro86/humanizer-zh-plus
+      - name: humanizer-zh-pro
+        description: "在 humanizer-zh-plus 基础上增加半自动自我进化工作区"
 ---
 
-# humanizer-zh-plus：中文文本去 AI 味增强工具
+# humanizer-zh-pro：中文文本去 AI 味增强 Skill
 
-识别并去除中文 AI 生成痕迹，使文字听起来自然、有个性、像真实人类书写。基于 **blader/humanizer 2.5.1** + **op7418/humanizer-zh** + **5 种中文特有 Pattern**。
+识别并去除中文 AI 生成痕迹，使文字听起来自然、有个性，像真实人类书写。基于 **RobinZorro86/humanizer-zh-plus** 更新，并增加半自动自我进化工作区。
 
 **通用版**：适用于所有中文写作场景，不针对特定作者风格。如需针对个人风格优化，可在此基础上扩展声音校准规则。
 
