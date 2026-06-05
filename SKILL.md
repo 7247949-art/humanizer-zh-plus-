@@ -1,7 +1,7 @@
 ---
 name: humanizer-zh-plus
 description: "中文文本去 AI 味增强工具。基于 blader/humanizer 2.5.1 + op7418/humanizer-zh + 5 种中文特有 Pattern。通用版，适用于所有中文写作场景。"
-version: 1.0.0
+version: 1.1.0
 author: Brook (writing agent)
 license: MIT
 platforms: [linux, macos, windows]

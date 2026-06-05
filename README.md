@@ -60,13 +60,13 @@ humanizer-zh-plus 在上述两个项目的基础上，增加了 **5 种中文 LL
 ### 方式一：通过 npx 安装（推荐）
 
 ```bash
-npx skills add https://github.com/RobinZorro86/humanizer-zh-plus
+npx skills add https://github.com/7247949-art/humanizer-zh-plus
 ```
 
 ### 方式二：Git 克隆
 
 ```bash
-git clone https://github.com/RobinZorro86/humanizer-zh-plus.git ~/.claude/skills/humanizer-zh-plus
+git clone https://github.com/7247949-art/humanizer-zh-plus.git ~/.claude/skills/humanizer-zh-plus
 ```
 
 ### 方式三：手动下载
@@ -150,7 +150,7 @@ humanizer-zh-plus/
 
 ## 版本历史
 
-### v1.1.0（未发布）
+### v1.1.0（2026-06-05）
 - 增加半自动自我进化工作区
 - 增加候选 Pattern 与改写案例模板
 - 增加候选达到门槛后的人工审核流程
