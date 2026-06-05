@@ -544,6 +544,7 @@ metadata:
 
 本技能基于以下项目构建：
 
+- **[RobinZorro86/humanizer-zh-plus](https://github.com/RobinZorro86/humanizer-zh-plus)** — 中文增强版，整合 34 种 Pattern 和中文改写示例。本仓库在此基础上继续增加半自动自我进化工作区。
 - **[blader/humanizer](https://github.com/blader/humanizer)** v2.5.1 — 英文原版，29种模式，MIT License
   - 基于 [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)（WikiProject AI Cleanup 维护）
 - **[op7418/humanizer-zh](https://github.com/op7418/humanizer-zh)** — 中文翻译版，中文化触发词和示例

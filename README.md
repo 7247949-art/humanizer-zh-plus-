@@ -11,12 +11,12 @@
 
 ## 致谢
 
-本项目基于以下两个开源项目：
+本项目基于 **[RobinZorro86/humanizer-zh-plus](https://github.com/RobinZorro86/humanizer-zh-plus)** 更新而来，并延续其对以下开源项目的整理与致谢：
 
 - **[blader/humanizer](https://github.com/blader/humanizer)** — 英文原版，29 种 AI 写作模式检测，MIT License。基于 Wikipedia [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)（WikiProject AI Cleanup 维护）。
 - **[op7418/humanizer-zh](https://github.com/op7418/humanizer-zh)** — humanizer 的中文翻译版，将英文 Pattern 中文化并添加了中文触发词和示例。
 
-humanizer-zh-plus 在上述两个项目的基础上，增加了 **5 种中文 LLM 特有的写作模式**，形成完整的 34 种 Pattern 检测体系，专为中文写作场景优化。
+RobinZorro86/humanizer-zh-plus 在上述两个项目的基础上，增加了 **5 种中文 LLM 特有的写作模式**，形成完整的 34 种 Pattern 检测体系，专为中文写作场景优化。本仓库在此基础上继续增加半自动自我进化工作区，用于沉淀候选 Pattern 和改写案例。
 
 ---
 
@@ -170,6 +170,7 @@ humanizer-zh-plus/
 - [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup)
 - [blader/humanizer](https://github.com/blader/humanizer)
 - [op7418/humanizer-zh](https://github.com/op7418/humanizer-zh)
+- [RobinZorro86/humanizer-zh-plus](https://github.com/RobinZorro86/humanizer-zh-plus)
 
 ---
 
