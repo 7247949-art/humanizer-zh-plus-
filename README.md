@@ -130,7 +130,7 @@ git clone https://github.com/RobinZorro86/humanizer-zh-plus.git ~/.claude/skills
 
 ## 文件结构
 
-```
+```text
 humanizer-zh-plus/
 ├── SKILL.md                         # 技能定义文件（34种Pattern完整清单）
 ├── README.md                        # 项目说明
