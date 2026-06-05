@@ -6,7 +6,7 @@ occurrences: 1
 example_count: 1
 merge_threshold:
   occurrences: 3
-  examples: 2
+  example_count: 2
 first_seen: 2026-06-05
 last_seen: 2026-06-05
 related_examples:
@@ -21,7 +21,7 @@ related_examples:
 
 ## 常见触发词/结构
 
-- 
+- 待补充
 
 ## 为什么像 AI 写的
 

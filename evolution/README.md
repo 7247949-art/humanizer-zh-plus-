@@ -15,7 +15,7 @@
 ## 工作流
 
 1. 完成中文文本改写。
-2. 对照 `SKILL.md` 的 34 个正式 Pattern 和 `evolution/candidates/` 的候选 Pattern。
+2. 对照 `SKILL.md` 的现有正式 Pattern 和 `evolution/candidates/` 的候选 Pattern。
 3. 在 `evolution/examples/` 记录一条案例。
 4. 如果发现新的稳定 AI 味句式，创建或更新候选 Pattern。
 5. 候选达到 `occurrences >= 3` 且 `example_count >= 2` 时，将状态改为 `ready_for_review`。
