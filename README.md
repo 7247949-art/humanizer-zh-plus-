@@ -43,6 +43,16 @@ humanizer-zh-plus 在上述两个项目的基础上，增加了 **5 种中文 LL
 | 套路结尾词 | 模板化收尾 | "综上所述"、"总而言之"、"一言以蔽之" |
 | 段落节奏均匀 | 连续段落长度结构相似 | 每段都是2-3句，长度相近 |
 
+### 半自动自我进化
+
+本项目支持轻量的规则进化与案例进化：
+
+- **规则进化**：发现新的 AI 味句式后，先记录为候选 Pattern。
+- **案例进化**：保存"原文 -> 改写 -> 复盘"，让后续规则有证据。
+- **人工合并**：候选达到 3 次独立出现且至少 2 个案例后，才建议升级为正式 Pattern。
+
+候选和案例存放在 `evolution/` 目录，正式规则仍以 `SKILL.md` 为准。
+
 ---
 
 ## 安装
@@ -123,15 +133,27 @@ git clone https://github.com/RobinZorro86/humanizer-zh-plus.git ~/.claude/skills
 ```
 humanizer-zh-plus/
 ├── SKILL.md                         # 技能定义文件（34种Pattern完整清单）
-├── REFERENCES/
+├── README.md                        # 项目说明
+├── LICENSE                          # MIT License
+├── references/
 │   └── chinese-patterns.md          # 5种中文特有Pattern详解
-├── README.md                        # 本文件
-└── LICENSE                          # MIT License
+└── evolution/
+    ├── README.md                    # 自我进化流程说明
+    ├── candidates/
+    │   └── _template.md             # 候选Pattern模板
+    ├── examples/
+    │   └── _template.md             # 改写案例模板
+    └── review-log.md                # Pattern审核记录
 ```
 
 ---
 
 ## 版本历史
+
+### v1.1.0（未发布）
+- 增加半自动自我进化工作区
+- 增加候选 Pattern 与改写案例模板
+- 增加候选达到门槛后的人工审核流程
 
 ### v1.0.0（2026-05-14）
 - 初始版本
