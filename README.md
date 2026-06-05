@@ -60,13 +60,13 @@ RobinZorro86/humanizer-zh-plus 在上述两个项目的基础上，增加了 **5
 ### 方式一：通过 npx 安装（推荐）
 
 ```bash
-npx skills add https://github.com/7247949-art/humanizer-zh-plus
+npx skills add https://github.com/7247949-art/humanizer-zh-pro
 ```
 
 ### 方式二：Git 克隆
 
 ```bash
-git clone https://github.com/7247949-art/humanizer-zh-plus.git ~/.claude/skills/humanizer-zh-plus
+git clone https://github.com/7247949-art/humanizer-zh-pro.git ~/.claude/skills/humanizer-zh-plus
 ```
 
 ### 方式三：手动下载
