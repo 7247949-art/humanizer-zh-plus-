@@ -2,11 +2,11 @@
 
 **中文文本去 AI 味增强 Skill。**
 
-`humanizer-zh-pro` 用 34 种 AI 写作 Pattern 扫描中文文本，并通过半自动自我进化机制持续沉淀新的候选 Pattern 和改写案例。它适合用在公众号、博客、企业文档、产品说明、知识文章和其他中文长文本改写场景。
+`humanizer-zh-pro` 用 34 种正式 AI 写作 Pattern 扫描中文文本，并通过人工创作痕迹增强流程和半自动自我进化机制，持续沉淀新的候选 Pattern 与改写案例。它适合用在公众号、博客、企业文档、产品说明、知识文章和其他中文长文本改写场景。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![humanizer](https://img.shields.io/badge/based%20on-humanizer%202.5.1-blue.svg)](https://github.com/blader/humanizer)
-[![version](https://img.shields.io/badge/version-1.1.0-blue.svg)](SKILL.md)
+[![version](https://img.shields.io/badge/version-1.2.0-blue.svg)](SKILL.md)
 
 ---
 
@@ -14,10 +14,11 @@
 
 这个项目不是一个普通的命令行工具，也不是 npm/Python 包。它是一个可以被支持 Skills 的 AI 助手加载的写作技能包。
 
-它做三件事：
+它做四件事：
 
 - **识别 AI 味**：用 34 种 Pattern 检查模板腔、翻译腔、公文腔、机械排比、套路结尾等问题。
 - **改写中文表达**：保留原意，但让句子更像真实中文作者写出来的。
+- **增强人工创作痕迹**：补回作者现场、判断取舍、证据处理、具体细节和不确定边界。
 - **积累新规则**：把新发现的 AI 味句式先记录为候选 Pattern，等证据足够后再人工合并。
 
 ---
@@ -44,6 +45,20 @@
 | 中文排比句式 | "是…是…是…"、"在于…在于…在于…"机械三连 | "AI 的价值在于…在于…在于…" |
 | 套路结尾词 | 用模板化短语收尾 | "综上所述"、"总而言之"、"希望有所帮助" |
 | 段落节奏均匀 | 每段长度和句式过分整齐 | 连续多段都是 2-3 句、长度接近 |
+
+### 人工创作痕迹增强
+
+有些文本即使去掉了常见套话，仍然会被读者或检测工具感觉"不像真人写的"。这通常不是词语问题，而是缺少真实写作过程。
+
+`humanizer-zh-pro` 会额外检查这些痕迹：
+
+- **作者现场**：文章是否从真实问题、观察或矛盾进入，而不是万能背景。
+- **判断取舍**：作者有没有说明自己为什么这样判断，哪些说法暂时不能下结论。
+- **证据处理**：来源、材料、例子是否有处理痕迹，而不是"数据显示""专家认为"一笔带过。
+- **具体细节**：是否保留动作、对象、场景、限制条件，而不是只剩抽象名词。
+- **自然节奏**：段落是否过于工整、平衡、完整，像一次性生成出来的成稿。
+
+这部分不会承诺绕过任何检测器，也不会鼓励编造经历或资料。它的目标是让文章更接近真实作者的写作逻辑。
 
 ### 半自动自我进化
 
@@ -167,6 +182,8 @@ git clone https://github.com/7247949-art/humanizer-zh-pro.git ~/.codex/skills/hu
 4. 候选达到 `occurrences >= 3` 且 `example_count >= 2` 后，标记为 `ready_for_review`。
 5. 维护者确认后，再把候选升级为正式 Pattern。
 
+当前已开始观察 5 个"人工创作痕迹"候选 Pattern：无作者现场、结论过度完成、证据链不透明、细节贫血、过度工整正确感。
+
 这样做的好处是：规则会进化，但不会失控。
 
 ---
@@ -183,15 +200,27 @@ humanizer-zh-pro/
 └── evolution/
     ├── README.md                    # 自我进化流程说明
     ├── candidates/
-    │   └── _template.md             # 候选 Pattern 模板
+    │   ├── _template.md             # 候选 Pattern 模板
+    │   ├── pattern-035-author-scene.md
+    │   ├── pattern-036-over-completed-conclusion.md
+    │   ├── pattern-037-opaque-evidence-chain.md
+    │   ├── pattern-038-detail-anemia.md
+    │   └── pattern-039-over-neat-correctness.md
     ├── examples/
-    │   └── _template.md             # 改写案例模板
+    │   ├── _template.md             # 改写案例模板
+    │   └── 2026-06-06-human-authorship-traces.md
     └── review-log.md                # Pattern 审核记录
 ```
 
 ---
 
 ## 版本历史
+
+### v1.2.0（2026-06-06）
+
+- 增加人工创作痕迹增强流程
+- 新增 5 个候选 Pattern：无作者现场、结论过度完成、证据链不透明、细节贫血、过度工整正确感
+- 新增人工创作痕迹案例，方便后续复盘和合并
 
 ### v1.1.0（2026-06-05）
 
@@ -222,7 +251,7 @@ humanizer-zh-pro/
 - [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)
 - [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup)
 
-本仓库在 `humanizer-zh-plus` 的基础上，继续增加半自动自我进化机制，用于沉淀候选 Pattern、改写案例和审核记录。
+本仓库在 `humanizer-zh-plus` 的基础上，继续增加人工创作痕迹增强流程和半自动自我进化机制，用于沉淀候选 Pattern、改写案例和审核记录。
 
 ---
 
